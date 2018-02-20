@@ -1,6 +1,6 @@
 {
   "name": "language-dogmaql",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "DogmaQL language support in Atom.",
   "author": {
     "name": "Justo Labs",
