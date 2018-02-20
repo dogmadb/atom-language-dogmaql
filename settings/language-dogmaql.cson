@@ -1,0 +1,5 @@
+'.source.dogmaql':
+  'editor':
+    'commentStart': '# '
+    # 'increaseIndentPattern': ''
+    # 'decreaseIndentPattern': '^\\s*((end|}|\\])\\)|(}|\\]|\\)))$'

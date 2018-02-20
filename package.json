@@ -1,0 +1,34 @@
+{
+  "name": "language-dogmaql",
+  "version": "0.1.0",
+  "description": "DogmaQL language support in Atom.",
+  "author": {
+    "name": "Justo Labs",
+    "email": "hello@justolabs.com",
+    "url": "http://dogmalang.com"
+  },
+  "contributors": [
+    {
+      "name": "Raúl G. González",
+      "email": "raulggonzalez@dogmalang.com",
+      "url": ""
+    }
+  ],
+  "keywords": [
+    "Dogma"
+  ],
+  "bugs": {
+    "url": "https://github.com/dogmadb/atom-language-dogmaql/issues",
+    "email": "issues@dogmadb.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dogmadb/atom-language-dogmaql.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.50.0"
+  },
+  "dependencies": {},
+  "private": false
+}

@@ -1,0 +1,75 @@
+'name': 'DogmaQL'
+'scopeName': 'source.dogmaql'
+'comment': 'DogmaQL language'
+'fileTypes': [
+  'dql'
+  'dogmaql'
+]
+'patterns': [
+  {
+    'begin': '#'
+    'end': '$'
+    'name': 'comment.dogma'
+  }
+  {
+    'begin': '"""'
+    'end': '"""'
+    'name': 'string.quoted.triple.dogma'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.dogma'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.dogma'
+      }
+    ]
+  }
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'entity.name.dogma'
+  }
+  {
+    'match': '\\b(\\d[\\d\\. ]*)\\b'
+    'name': 'constant.numeric.dogma'
+  }
+  {
+    'match': '\\b(false|true|nil)\\b'
+    'name': 'constant.language.dogma'
+  }
+  {
+    'match': '\\b(and|as|async|await|break|catch|const|delete|do|dogma|each|else|end|enum|export|extern|finally|fn|for|from|if|iif|impl|in|insert|into|is|like|native|next|nop|not|op|or|pawait|peval|pub|pvt|return|set|then|type|update|use|var|while|with|yield)\\b'
+    'name': 'keyword.dogma'
+  }
+  {
+    'match': '\\b(exists|len)\\b'
+    'name': 'support.function.dogma'
+  }
+  {
+    'match': '\\.\\.\\.[a-zA-Z0-9_]+'
+    'name': 'variable.parameter.dogma'
+  }
+  {
+    'match': '((\\:(?!(any|bool|datetime|func|list|num|map|promise|proxy|text))[a-zA-Z0-9_]+)|([\\.\\?][a-zA-Z0-9_]+))'
+    'name': 'variable.language.dogma'
+  }
+  {
+    'match': '(?<![^.]\\.|:)\\b(self|super)\\b'
+    'name': 'variable.language.self.dogma'
+  }
+  {
+    'match': '\\b(any|bool|datetime|func|list|num|map|promise|proxy|text)\\b'
+    'name': 'support.type.dogma'
+  }
+  {
+    'match': '(\\@[a-zA-Z0-9_]+)'
+    'name': 'entity.name.section.dogma'
+  }
+  {
+    'match': '\\+|\\+=|-|-=|\\*|\\*=|\\*\\*|\\*\\*=|\\/|\\/=|%|%=|=|==|===|=>|!|!=|!==|<|<<|<<=|<=|>|>>|>>=|>=|\\^|\\^=|~|~=|\\(|\\)|\\[|\\]|{|}|\\.\\.|\\.\\.\\.|\\?|&|&=|&&|\\||\\|=|\\|\\|\\,'
+    'name': 'keyword.operator.dogma'
+  }
+]
